@@ -6,8 +6,8 @@
             "newline": true,
             "segments": [
                 {
-                    "background": "#56b6c2",
-                    "foreground": "#f2f3f8",
+                    "background": "#5C8984",
+                    "foreground": "#F2D8D8",
                     "properties": {
                         "alpine": "\uf300",
                         "arch": "\uf303",
@@ -26,27 +26,27 @@
                         "windows": "\ue70f"
                     },
                     "style": "diamond",
-                    "leading_diamond": "\u256d\u2500\ue0b2",
-                    "template": " {{ .Icon }} ",
+                    "leading_diamond": "\u256d\u2500\ue0b6",
+                    "template": "{{ .Icon }} ",
                     "type": "os"
                 },
                 {
-                    "background": "#0087af",
+                    "background": "#374259",
                     "foreground": "#f2f3f8",
                     "properties": {
                         "style": "agnoster_short",
                         "max_depth": 3,
                         "folder_icon": "\u2026",
-                        "folder_separator_icon": " <transparent>\ue0b5</> "
+                        "folder_separator_icon": " <transparent>\ue0b1</> "
                     },
                     "style": "powerline",
-                    "powerline_symbol": "\ue0b4",
+                    "powerline_symbol": "\ue0b0",
                     "template": " {{ .Path }} ",
                     "type": "path"
                 },
                 {
-                    "background": "#378504",
-                    "foreground": "#f2f3f8",
+                    "background": "#5C8984",
+                    "foreground": "#F2D8D8",
                     "background_templates": [
                         "{{ if or (.Working.Changed) (.Staging.Changed) }}#a97400{{ end }}",
                         "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#54433a{{ end }}",
@@ -74,8 +74,8 @@
             "alignment": "right",
             "segments": [
                 {
-                    "background": "#00BD9C",
-                    "foreground": "#191323",
+                    "background": "#5C8984",
+                    "foreground": "#F2D8D8",
                     "leading_diamond": "\ue0b6",
                     "properties": {
                         "style": "austin",
@@ -84,18 +84,18 @@
                     "invert_powerline": true,
                     "style": "diamond",
                     "powerline_symbol": "\ue0b2",
-                    "template": "{{ .FormattedMs }}\ue0b5",
+                    "template": " {{ .FormattedMs }} |",
                     "type": "executiontime"
                 },
                 {
-                    "background": "#00BD9C",
-                    "foreground": "#191323",
+                    "background": "#5C8984",
+                    "foreground": "#F2D8D8",
                     "properties": {
                         "time_format": "15:04:05"
                     },
                     "invert_powerline": true,
                     "style": "diamond",
-                    "template": " {{ .CurrentDate | date .Format }}",
+                    "template": " {{ .CurrentDate | date .Format }} ",
                     "trailing_diamond": "\ue0b4 ",
                     "type": "time"
                 }
@@ -107,7 +107,7 @@
             "newline": true,
             "segments": [
                 {
-                    "foreground": "#56b6c2",
+                    "foreground": "#5C8984",
                     "style": "plain",
                     "template": "\u2570\u2500 {{ if .Root }}#{{else}}${{end}}",
                     "type": "text"
